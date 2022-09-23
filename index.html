@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="engine.js"></script>
+  <script>
+    (function () {
+      let activate = true;
+      var src = '//cdn.jsdelivr.net/npm/eruda';
+      if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true' && !activate) return;
+      document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+      document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+    })();
+  </script>
+</head>
+
+<body>
+    <canvas id="canvas">
+
+    </canvas>
+  <script src="script.js"></script>
+</body>
+
+</html>
